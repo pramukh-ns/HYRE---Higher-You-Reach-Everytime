@@ -1,0 +1,167 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginRight="0dp"
+            android:background="#4285F4"
+            app:titleTextColor="@color/white"
+            app:title="HYRE"
+            app:titleMarginStart="190sp"
+            app:itemIconTint="@drawable/selector"
+            app:itemTextColor="@drawable/selector"/>
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="221dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="106dp"
+            android:layout_marginLeft="106dp"
+            android:layout_marginTop="33dp"
+            android:layout_marginEnd="110dp"
+            android:layout_marginRight="110dp"
+            android:text=" New Project"
+            android:textColor="#000000"
+            android:textSize="36sp" />
+
+        <TextView
+            android:id="@+id/tvcname"
+            android:layout_width="398dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="45dp"
+            android:drawableStart="@drawable/ic_profile"
+            android:drawableLeft="@drawable/ic_profile"
+            android:drawablePadding="25dp"
+            android:ems="10"
+            android:hint="Company Name"
+            android:textColor="#000000"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/pt1"
+            android:layout_width="398dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="45dp"
+            android:ems="10"
+            android:hint="Project Title"
+            android:inputType="textPersonName"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            android:drawableStart="@drawable/ic_project"
+            android:drawableLeft="@drawable/ic_project"
+            android:drawablePadding="25dp"/>
+
+        <EditText
+            android:id="@+id/pt2"
+            android:layout_width="398dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="45dp"
+            android:ems="10"
+            android:hint="Project Description"
+            android:inputType="textMultiLine"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            android:drawableStart="@drawable/ic_description"
+            android:drawableLeft="@drawable/ic_description"
+            android:drawablePadding="25dp"/>
+
+        <EditText
+            android:id="@+id/pt3"
+            android:layout_width="402dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="45dp"
+            android:ems="10"
+            android:hint="Skills"
+            android:inputType="textMultiLine"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            android:drawableStart="@drawable/ic_skills"
+            android:drawableLeft="@drawable/ic_skills"
+            android:drawablePadding="25dp"/>
+
+        <EditText
+            android:id="@+id/pt4"
+            android:layout_width="400dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="45dp"
+            android:ems="10"
+            android:hint="Role"
+            android:inputType="textPersonName"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            android:drawableStart="@drawable/ic_role"
+            android:drawableLeft="@drawable/ic_role"
+            android:drawablePadding="25dp"/>
+
+        <EditText
+            android:id="@+id/pt5"
+            android:layout_width="390dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="45dp"
+            android:ems="10"
+            android:hint="Duration"
+            android:inputType="textPersonName"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            android:drawableStart="@drawable/ic_duration"
+            android:drawableLeft="@drawable/ic_duration"
+            android:drawablePadding="25dp" />
+
+
+        <Button
+            android:id="@+id/b4"
+            android:layout_width="235dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="98dp"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="33dp"
+            android:layout_marginEnd="102dp"
+            android:layout_marginRight="102dp"
+            android:gravity="center"
+            android:text="Add Project"
+            android:textSize="24sp"
+            app:backgroundTint="#4285F4" />
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/company_bottom_navigation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="0dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="33dp"
+            android:layout_marginBottom="-2dp"
+            app:itemBackground="@color/white"
+            app:labelVisibilityMode="labeled"
+            app:itemIconTint="@drawable/selector"
+            app:itemTextColor="@drawable/selector"
+            app:menu="@menu/company_bottom_navigation_menu" />
+
+
+
+    </LinearLayout>
+</ScrollView>

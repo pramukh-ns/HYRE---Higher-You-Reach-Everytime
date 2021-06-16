@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginRight="0dp"
+            android:background="#4285F4"
+            app:titleTextColor="@color/white"
+            app:title="HYRE"
+            app:titleMarginStart="190sp"
+            app:itemIconTint="@drawable/selector"
+            app:itemTextColor="@drawable/selector"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="User Profile"
+            android:layout_marginTop="20sp"
+            android:textColor="@color/black"
+            android:textSize="36sp"
+            android:layout_gravity="center"/>
+
+        <ImageView
+            android:id="@+id/img1"
+            android:layout_width="180dp"
+            android:layout_height="130dp"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/ic_profile"/>
+
+        <View
+            android:id="@+id/line"
+            android:layout_width="390dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="13dp"
+            android:background="@color/black" />
+
+        <EditText
+            android:id="@+id/cp11"
+            android:layout_width="390dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="55dp"
+            android:drawableStart="@drawable/ic_profile"
+            android:ems="10"
+            android:hint="Name"
+            android:inputType="textPersonName"
+            android:textSize="24dp"
+            android:drawablePadding="25dp"
+            android:drawableLeft="@drawable/ic_profile" />
+
+        <TextView
+            android:id="@+id/cp12"
+            android:layout_width="390dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30dp"
+            android:drawableStart="@drawable/ic_username"
+            android:drawableLeft="@drawable/ic_username"
+            android:drawablePadding="25dp"
+            android:ems="10"
+            android:textColor="@color/black"
+            android:hint="Username"
+            android:textSize="24dp" />
+
+        <EditText
+            android:id="@+id/cp13"
+            android:layout_width="390dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginLeft="20dp"
+            android:drawableStart="@drawable/ic_phone"
+            android:textSize="24dp"
+            android:inputType="number"
+            android:hint="Number"
+            android:drawablePadding="25dp"
+            android:drawableLeft="@drawable/ic_phone" />
+
+
+        <EditText
+            android:id="@+id/cp14"
+            android:layout_width="390dp"
+            android:layout_height="74dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="40dp"
+            android:drawableStart="@drawable/ic_location"
+            android:drawableLeft="@drawable/ic_location"
+            android:drawablePadding="25dp"
+            android:hint="Address"
+            android:inputType="textMultiLine"
+            android:textSize="24dp" />
+
+        <EditText
+            android:id="@+id/cp15"
+            android:layout_width="390dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="40dp"
+            android:drawableStart="@drawable/ic_description"
+            android:drawableLeft="@drawable/ic_description"
+            android:drawablePadding="25dp"
+            android:ems="10"
+            android:hint="Company Description"
+            android:inputType="textMultiLine"
+            android:textSize="24dp" />
+
+
+        <Button
+            android:id="@+id/b7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save"
+            android:layout_marginTop="40dp"
+            android:textSize="30sp"
+            app:backgroundTint=" #4285F4"
+            android:gravity="center"
+            android:layout_gravity="center_vertical|center_horizontal"/>
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/company_bottom_navigation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="bottom"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginBottom="10sp"
+            app:itemBackground="@color/white"
+            app:itemIconTint="@drawable/selector"
+            app:itemTextColor="@drawable/selector"
+            app:labelVisibilityMode="labeled"
+            app:menu="@menu/company_bottom_navigation_menu" />
+
+    </LinearLayout>
+</ScrollView>
