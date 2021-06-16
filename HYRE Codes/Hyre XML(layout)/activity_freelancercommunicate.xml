@@ -1,0 +1,164 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginRight="0dp"
+            android:background="#4285F4"
+            app:titleTextColor="@color/white"
+            app:title="HYRE"
+            app:titleMarginStart="185sp"
+            app:itemIconTint="@drawable/selector"
+            app:itemTextColor="@drawable/selector"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="User Profile"
+            android:layout_marginTop="20sp"
+            android:textColor="@color/black"
+            android:textSize="36sp"
+            android:layout_gravity="center"/>
+
+        <ImageView
+            android:id="@+id/fcpimg"
+            android:layout_width="180dp"
+            android:layout_height="130dp"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/ic_profile"/>
+
+        <View
+            android:id="@+id/line"
+            android:layout_width="390dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="13dp"
+            android:background="@color/black" />
+
+        <TextView
+            android:id="@+id/fcname"
+            android:layout_width="390dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="55dp"
+            android:drawableStart="@drawable/ic_profile"
+            android:drawableLeft="@drawable/ic_profile"
+            android:drawablePadding="25dp"
+            android:ems="10"
+            android:hint="Name"
+            android:textColor="#000000"
+            android:textSize="24dp" />
+
+        <TextView
+            android:id="@+id/fcusername"
+            android:layout_width="390dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30dp"
+            android:drawableStart="@drawable/ic_username"
+            android:drawableLeft="@drawable/ic_username"
+            android:drawablePadding="25dp"
+            android:ems="10"
+            android:hint="Username"
+            android:textColor="#000000"
+            android:textSize="24dp" />
+
+        <TextView
+            android:id="@+id/fcpno"
+            android:layout_width="390dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30dp"
+            android:drawableStart="@drawable/ic_phone"
+            android:drawableLeft="@drawable/ic_phone"
+            android:drawablePadding="25dp"
+            android:ems="10"
+            android:hint="Phone Number"
+            android:textColor="#000000"
+            android:textSize="24dp" />
+
+        <TextView
+            android:id="@+id/fcexp"
+            android:layout_width="390dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30dp"
+            android:ems="10"
+            android:drawableStart="@drawable/ic_description"
+            android:hint="Experience"
+            android:textSize="24dp"
+            android:drawablePadding="25dp"
+            android:textColor="@color/black"
+            android:drawableLeft="@drawable/ic_description" />
+
+        <TextView
+            android:id="@+id/fcskills"
+            android:layout_width="390dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30dp"
+            android:ems="10"
+            android:textColor="#000000"
+            android:drawableStart="@drawable/ic_skills"
+            android:hint="Skills"
+            android:textSize="24dp"
+            android:drawablePadding="25dp"
+            android:drawableLeft="@drawable/ic_skills" />
+
+        <TextView
+            android:id="@+id/fcrate"
+            android:layout_width="390dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30dp"
+            android:drawableStart="@drawable/ic_rate"
+            android:drawableLeft="@drawable/ic_rate"
+            android:drawablePadding="25dp"
+            android:ems="10"
+            android:hint="Ratings"
+            android:textColor="#000000"
+            android:textSize="24dp" />
+
+
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/company_bottom_navigation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="bottom"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="165dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginBottom="10sp"
+            app:itemBackground="@color/white"
+            app:itemIconTint="@drawable/selector"
+            app:itemTextColor="@drawable/selector"
+            app:labelVisibilityMode="labeled"
+            app:menu="@menu/company_bottom_navigation_menu"
+            />
+    </LinearLayout>
+</ScrollView>

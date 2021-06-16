@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.hyreeee">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.HYREEEE">
+        <activity android:name=".freelancercommunicate"></activity>
+        <activity android:name=".companymessage" />
+        <activity android:name=".freelancermessage" />
+        <activity android:name=".freelancernotification" />
+        <activity android:name=".editfreelancerfeedback" />
+        <activity android:name=".freelancerfeedback" />
+        <activity android:name=".myemployees" />
+        <activity android:name=".companydetails" />
+        <activity android:name=".freelancerdetails" />
+        <activity android:name=".companynotification" />
+        <activity android:name=".settings" />
+        <activity android:name=".editfreelancerprofile" />
+        <activity android:name=".editcompanyprofile" />
+        <activity android:name=".newproject" />
+        <activity android:name=".freelancerprofile" />
+        <activity android:name=".freelancersearch" />
+        <activity android:name=".companysearch" />
+        <activity android:name=".companyprofile" />
+        <activity android:name=".forgotpassword" />
+        <activity android:name=".companyhomepage" />
+        <activity android:name=".freelancerhomepage" />
+        <activity android:name=".MainActivity2">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" />
+    </application>
+
+</manifest>
